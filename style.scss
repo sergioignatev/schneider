@@ -1,5 +1,6 @@
 body{margin:0}
-.margins{min-width:980px;}
+.margins{width:70%;border:1px solid red;margin-left: auto;margin-right: auto;padding-left:10px;padding-right:10px;}
+@media(max-width:1000px){.margins{min-width:90%;}}
 
 header{background:rgb(220 220 220);
 width:100%;
@@ -9,36 +10,76 @@ justify-content: center;
 
 }
 #header{display:flex;
-}
 
+   
+}
+@media(max-width:750px){
+    #header{flex-direction: column;
+    height:auto;
+#num{display:flex;justify-content: space-between;}
+div{width:100%;}
+}
+}
 #logo{display:flex;align-items: center;height:100%;}
 #time{width:33%;
 display:flex;
-align-items: center;}
+justify-content: flex-end;}
 #phone{width:33%;
+    border:1px solid red;
     display:flex;
     align-items: center;
-justify-content: end;}
-
-menu{
- 
+justify-content: flex-end;
+#num{text-align: end;}}
+nav{
+   
+ display:flex;
+ justify-content: center;
     height:55px;
-    display:flex;
-    justify-content: center;
+    
+    
     color:rgb(251 251 251);
     background-color: rgb(119 119 119);
     margin-top: 0px;
     margin-bottom: 0px;
-    .margins{display:flex;justify-content: space-around;align-items: center;}
-.menu{border-left:1px solid white;
-border-right: 1px solid white;
-width:100%;
-display: flex;
-justify-content: center;}
+    .margins{display:flex;justify-content:center;align-items: center;max-width: 60%;}
+    .menu{
+    border-right: 2px solid white;
+    width:100%;
+    display: flex;
+    justify-content: center;}
+    
+    
 }
+
 slider{margin-top: 0px;
     width:100%;
+   
     text-align: center;
-img{height:100%;max-width: 100%;}
+img{height:410px;max-width: 100%;}
 
+}
+content{
+.margins{display:flex;}
+
+#news{width:34%;
+background:rgb(119 119 119);
+color:rgb(255 255 255);
+margin-top: 50px;
+
+}
+#innernews{margin-left:35px;
+padding-top: 15px;
+}
+#archive{text-align: end;
+margin-right: 50px;
+margin-top: 50px;
+padding-bottom:30px;
+}
+}
+#text{margin-left:40px;width:64%;margin-top:50px;
+    color:rgb(119 119 119);
+p{margin-top:30px;}
+#text-bottom{display: flex;justify-content: space-between;}
+#bottom-left{width:47%;}
+#bottom-right{width:47%;}
 }
