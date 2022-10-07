@@ -97,7 +97,7 @@ slider {
 }
 slider img {
   height: 410px;
-  width: 1400px;
+  width: 100%;
 }
 
 content .margins {
