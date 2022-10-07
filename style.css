@@ -93,11 +93,10 @@ slider {
   margin-top: 0px;
   width: 100%;
   display: flex;
-  justify-content: center;
-}
-slider img {
   height: 410px;
-  width: 100%;
+  background: url("mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 content .margins {
