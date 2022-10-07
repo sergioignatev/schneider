@@ -1,4 +1,4 @@
-body{margin:0}
+body{margin:0;font-family: "Open Sans";}
 .margins{width:70%;border:1px solid red;margin-left: auto;margin-right: auto;padding-left:10px;padding-right:10px;}
 @media(max-width:1000px){.margins{min-width:90%;}}
 
@@ -56,8 +56,9 @@ nav{
 slider{margin-top: 0px;
     width:100%;
    
-    text-align: center;
-img{height:410px;max-width: 100%;}
+   display: flex;
+   justify-content: center;
+img{height:410px;width:1400px;}
 
 }
 content{

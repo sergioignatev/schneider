@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Open Sans";
 }
 
 .margins {
@@ -91,11 +92,12 @@ nav .menu {
 slider {
   margin-top: 0px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 slider img {
   height: 410px;
-  max-width: 100%;
+  width: 1400px;
 }
 
 content .margins {
