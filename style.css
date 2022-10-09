@@ -56,7 +56,6 @@ header {
 
 #time {
   width: 33%;
-  align-self: center;
   display: flex;
   justify-content: flex-end;
   font-family: "Open Sans Regular", sans-serif;
