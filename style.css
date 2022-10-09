@@ -28,7 +28,13 @@ header {
   display: flex;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 830px) {
+  #logo {
+    margin-top: 50px;
+  }
+  header {
+    height: auto;
+  }
   #header {
     flex-direction: column;
     height: auto;
@@ -53,6 +59,7 @@ header {
   justify-content: flex-end;
   font-family: "Open Sans Regular", sans-serif;
   font-weight: lighter;
+  padding-top: 70px;
   color: rgb(119, 119, 119);
 }
 
@@ -79,6 +86,14 @@ header {
   text-align: end;
 }
 
+@media (max-width: 830px) {
+  #num p {
+    text-align: left;
+  }
+  #time {
+    justify-content: flex-start;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -157,6 +172,23 @@ content #archive {
   width: 47%;
 }
 
+@media (max-width: 830px) {
+  content #text {
+    width: 100%;
+  }
+  content .margins {
+    flex-direction: column;
+  }
+  content #news {
+    width: 100%;
+  }
+  content #text-bottom {
+    flex-direction: column;
+  }
+  content #bottom-left {
+    width: 100%;
+  }
+}
 footer {
   margin-top: 200px;
   background: rgb(119, 119, 119);
