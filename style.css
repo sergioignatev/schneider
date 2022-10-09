@@ -142,6 +142,7 @@ content #news {
   background: rgb(119, 119, 119);
   color: rgb(255, 255, 255);
   margin-top: 50px;
+  padding-right: 20px;
 }
 content #news #h1 {
   font-weight: bold;
