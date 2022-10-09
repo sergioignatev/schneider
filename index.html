@@ -58,7 +58,7 @@
 <div>
 <h2>Чем мы занимаеися?</h2>
 <div id="text-bottom">
-<div id="bottom-left"><strong>LEFT bold</strong>
+<div id="bottom-left"><strong >LEFT bold</strong>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et scelerisque diam. Quisque gravida metus odio, sed fringilla ligula consectetur ac. Ut non condimentum dolor, vitae maximus ex. Maecenas sed convallis nisl</p>
 </div>
 <div id="bottom-right"><strong>Right bold</strong> 
@@ -88,8 +88,19 @@
 
 </body>
 <script>
-  let d=new Date()
-document.getElementById("monday").innerHTML=" "+d.getDay()+"."+d.getMonth()
-
-</script>
+  const d = new Date();
+  let x=(d.getDay());
+  let n=0;
+  if(x==0){n=1}
+  else if(x==1){n=7}
+  else if(x==2){n=6}
+  else if(x==3){n=5}
+  else if(x==4){n=4}
+  else if(x==5){n=3}
+  else if(x==6){n=2}
+  
+  
+  d.setDate(d.getDate() +n);
+  document.getElementById("monday").innerHTML = d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear();
+  </script>
 </html>
