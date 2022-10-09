@@ -1,3 +1,9 @@
+@media (max-width: 500px) {
+  .margins {
+    width: 100%;
+    border: 1px solid red;
+  }
+}
 body {
   margin: 0;
   font-family: "Open Sans";
@@ -172,12 +178,53 @@ content #archive {
   justify-content: space-between;
 }
 #text #bottom-left {
-  width: 47%;
+  width: 100%;
+  padding-left: 3%;
 }
 #text #bottom-right {
-  width: 47%;
+  width: 100%;
+  padding-left: 3%;
 }
 
+@media (max-width: 830px) {
+  #logo {
+    font-size: 20px;
+  }
+  nav {
+    height: auto;
+  }
+  nav .menu {
+    margin-top: 22px;
+    border-right: none;
+  }
+  nav .margins {
+    display: block;
+    height: auto;
+    border-right: none;
+  }
+  content .margins {
+    flex-direction: column;
+  }
+  content #news {
+    width: 100%;
+    padding-right: 10px;
+    margin-right: 0px;
+  }
+  content #text {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #text-bottom {
+    flex-direction: column;
+    border: 1px solid green;
+  }
+  #text-bottom #bottom-left {
+    padding-right: 0px;
+  }
+  #text-bottom #bottom-right {
+    padding-left: 0px;
+  }
+}
 footer {
   margin-top: 200px;
   background: rgb(119, 119, 119);

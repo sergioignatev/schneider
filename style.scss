@@ -1,3 +1,4 @@
+@import "media";
 body{margin:0;font-family: "Open Sans";}
 .margins{width:70%;margin-left: auto;margin-right: auto;padding-left:10px;padding-right:10px;}
 @media(max-width:1100px){.margins{min-width:90%;}}
@@ -123,10 +124,30 @@ padding-bottom:30px;
     
 p{margin-top:30px;}
 #text-bottom{display: flex;justify-content: space-between;}
-#bottom-left{width:47%;}
-#bottom-right{width:47%;}
+#bottom-left{width:100%;padding-left: 3%;;}
+#bottom-right{width:100%;padding-left: 3%;}
 }
+@media(max-width:830px){
+    #logo{font-size: 20px;}
+nav{
+    height:auto;
+    .menu{margin-top:22px;border-right: none;}
+    .margins{display:block;height:auto;border-right:none;}}
 
+    content{
+       
+    .margins{flex-direction: column;}
+    #news{width:100%;padding-right:10px;margin-right: 0px;}
+    #text{width:100%;margin-left: 0px;}
+    
+    }
+    #text-bottom{
+        flex-direction: column;
+        border:1px solid green;
+    
+    #bottom-left{padding-right:0px;}
+    #bottom-right{padding-left:0px;}}
+    }
 
 
 
